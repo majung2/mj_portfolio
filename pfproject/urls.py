@@ -20,4 +20,6 @@ import portfolio.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',portfolio.views.home,name="home"),
+    
+    path('firstpage/',portfolio.views.firstpage,name="firstpage"),
 ]

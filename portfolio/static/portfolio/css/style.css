@@ -1,15 +1,7 @@
+*{
+    background-color: #eee9ed;
+}
+
 .header{
-    background-color:black; 
-    color:white;
-}
-
-.main{
-    background-color: yellowgreen;
-    color: darkslategrey;
-    height:500px;
-}
-
-.footer{
-    background-color: violet;
-    color: white;
+    background-color: white;
 }
