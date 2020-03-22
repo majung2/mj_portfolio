@@ -9,12 +9,13 @@
 
     <body>
         <div class="header">
-            <h1>미정이의 포트폴리오!!</h1>
+            <p>미정이의 포트폴리오!!</p>
         </div>
 
         <div class="main">
             <p>메인부분입니다.</p>
-            <a href='firstpage'>첫번째 페이지 보기</a>
+            <a href="{% url 'firstpage' %}">첫번째 페이지 보기</a><br>
+            <a href="{% url 'secondpg' %}">두번째 페이지 보기</a>
         </div>
 
         <div class="footer">

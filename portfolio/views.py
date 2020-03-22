@@ -7,3 +7,6 @@ def home(request):
 
 def firstpage(request):
     return render(request, 'portfolio/firstpage.html')
+
+def secondpg(request):
+    return render(request, 'portfolio/secondpg.html')
