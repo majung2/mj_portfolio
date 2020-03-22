@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>미정's portfolio</title>
+        <meta charset='utf-8'>
+        <link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/style.css' %}">
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>두번째 페이지입니다.</h1>
+        </div>
+
+        <div class="main">
+            <p>메인부분입니다.<br>띄어쓰기입니다.</p>
+            <a href="{% url 'firstpage' %}">첫번째페이지</a>
+            <a href="{% url 'home' %}">홈으로 돌아가기</a>
+        </div>
+
+        <div class="footer">
+            <h5>copyright @majunge</h5>
+        </div>
+        
+    </body>
+</html>
