@@ -1,7 +1,46 @@
 *{
     background-color: #eee9ed;
+    font-size:20px;
+    box-sizing: border-box;
+}
+/*css의 주석입니다.*/
+header{
+    background-color:rgb(102, 180, 102);
+    height:50px;
+    border-radius: 10px 10px 10px 10px;
+    border-color: rgb(241, 106, 106);
+    border-style: dotted;
+    border-width:10px;
+    border-spacing: 10px;
 }
 
-.header{
-    font-size: 30px;
+section{
+    display:flex;
+    justify-content:center;
+    margin: 10px auto;
+    background-color: rgb(121, 121, 255);
+    height:500px;
 }
+
+nav{
+    background-color: yellowgreen;
+    width:20%;
+}
+
+article{
+    background-color: rgb(241, 106, 106);
+    width:50%;
+}
+
+aside{
+    background-color: seagreen;
+    width:30%;
+}
+
+footer{
+    background-color: rgb(191, 69, 196);
+    height:100px;
+    font-size:5px;
+}
+
+

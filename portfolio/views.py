@@ -10,3 +10,6 @@ def firstpage(request):
 
 def secondpg(request):
     return render(request, 'portfolio/secondpg.html')
+
+def new(request):
+    return render(request, 'portfolio/new.html')
