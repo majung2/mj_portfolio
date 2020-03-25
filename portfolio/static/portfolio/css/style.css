@@ -3,6 +3,10 @@
     font-size:20px;
     box-sizing: border-box;
 }
+
+
+
+
 /*css의 주석입니다.*/
 header{
     background-color:rgb(102, 180, 102);
@@ -16,25 +20,29 @@ header{
 
 section{
     display:flex;
-    justify-content:center;
+    justify-content:space-around;
+    align-items: flex-start;
+
     margin: 10px auto;
-    background-color: rgb(121, 121, 255);
     height:500px;
 }
 
 nav{
     background-color: yellowgreen;
-    width:20%;
+    width:100px;
+    height: 100px;
 }
 
 article{
     background-color: rgb(241, 106, 106);
-    width:50%;
+    width:400px;
+    height: 100px;
 }
 
 aside{
     background-color: seagreen;
-    width:30%;
+    width:200px;
+    height: 100px;
 }
 
 footer{

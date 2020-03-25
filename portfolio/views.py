@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 
-def home(request):
+def home(request): # home.html로 가는 함수
     return render(request, 'portfolio/home.html')
 
 def firstpage(request):

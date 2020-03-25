@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>new페이지</title>
+        <meta charset="utf-8">
+        
+    <body>
+        <header> <!--header태그입니다~-->
+            <h1>new페이지입니다.</h1>
+        </header>
+
+        <section>
+            <nav>
+                <p>nav바 입니다.</p>
+            </nav>
+
+            <section>
+                <p>내용내용입니다<strong><span style="color: red">강조할거야!</span></strong>랄라라랄라라라라<br><br>
+                <em>이것은 이텔릭체입니다.</em>
+                <em><strong>이것은 볼드체입니다.</strong></em>
+                </p>
+
+                <ol> <!--순서있는 리스트-->
+                    <li>할일1</li>
+                    <li>할일2</li>
+                    <li>할일3</li>
+                </ol>
+
+                <ul> <!--순서없는 리스트-->
+                    <li>할일1</li>
+                    <li>할일2</li>
+                    <li>할일3</li>
+                </ul>
+
+                <a href="{% url 'home' %}"><img style="width:500px;" src="https://img.sbs.co.kr/newimg/news/20181023/201241495_1280.jpg"></a>
+                <img style="width:500px;" src="{% static 'cherryblossom.jpg' %}">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vVL0U4tnMJI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+
+            <aside>
+                <p>side바 입니다.</p>
+            </aside>
+        </section>
+
+        <footer>
+            <p>#내용#내용</p>
+        </footer>
+
+    </body>
+
+</html>
