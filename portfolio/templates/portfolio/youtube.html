@@ -10,49 +10,159 @@
     <body>
         <header>
             <div class="icon">
-                <img src="{% static 'burger.JPG' %}">
-                <img src="{% static 'youtubeICON.JPG' %}">
+                <img src="{% static 'burger.JPG' %}" style="height:50px;">
+                <img src="{% static 'youtubeICON.JPG' %}" style="height:50px;">
             </div>
 
             <div class="search">
                 <input type="text" placeholder="검색"><!--내용입력 태그-->
-                <button><img src="{% static 'search.JPG' %}"></button><!--버튼 태그-->
+                <button><img src="{% static 'search.JPG' %}" style="height:25px"></button><!--버튼 태그-->
 
             </div>
             
-            <div class="profile">프로필</div>
+            <div class="profile">
+                <img src="{% static 'profile.JPG' %}" style="height:50px;">
+            </div>
         </header>
 
         <section>
             <div class="menu">
-                <h3>Home</h3>
-                <h3>Trending</h3>
-                <h3>Subsriptions</h3>
+                    <li>&nbsp&nbsp&nbsp&nbsp홈</li> <!--space 태그-->
+                    <li>&nbsp&nbsp&nbsp&nbsp인기</li>
+                    <li>&nbsp&nbsp&nbsp&nbsp구독</li>
                 <hr> <!--수평선 그리는 태그-->
-                <h3>Library</h3>
-                <h3>History</h3>
-                <h3>Watch later</h3>
-                <h3>Liked videos</h3>
+                    <li>&nbsp&nbsp&nbsp&nbsp보관함</li>
+                    <li>&nbsp&nbsp&nbsp&nbsp시청기록</li>
+                    <li>&nbsp&nbsp&nbsp&nbsp나중에 볼 동영상</li>
+                    <li>&nbsp&nbsp&nbsp&nbsp좋아요 표시한 동영상</li>
                 <hr> <!--수평선 그리는 태그-->
-                <h3 id="menu-title">SUBSCRIPTIONS</h3>
-                <h3>마정이</h3>
+                <h4 id="menu-title">구독</h4>
+                    <li>&nbsp&nbsp&nbsp&nbsp<a href="https://www.youtube.com/channel/UC5ZxjgDNfpSqcmMHGO7mnmg">마정이</a></li>
+                    <li>&nbsp&nbsp&nbsp&nbsp+ 채널탐색</li>
                 <hr> <!--수평선 그리는 태그-->
-                <h3 id="menu-title">MORE FROM YOUTUBE</h3>
-                <h3>YouTube Premium</h3>
-                <h3>YouTube Movies</h3>
+                <h4 id="menu-title">유튜브 더보기</h4>
+                    <li>&nbsp&nbsp&nbsp&nbspYouTube Premium</li>
+                    <li>&nbsp&nbsp&nbsp&nbspYouTube 영화</li>
+                    <li>&nbsp&nbsp&nbsp&nbsp게임</li>
+                    <li>&nbsp&nbsp&nbsp&nbsp실시간</li>
+                <hr> <!--수평선 그리는 태그-->
+                    <li>&nbsp&nbsp&nbsp&nbsp설정</li>
+                    <li>&nbsp&nbsp&nbsp&nbsp신고기록</li>
+                    <li>&nbsp&nbsp&nbsp&nbsp고객센터</li>
+                    <li>&nbsp&nbsp&nbsp&nbsp의견보내기</li>
+                <hr> <!--수평선 그리는 태그-->
+                <p>&nbsp© 2020 Google LLC</p>
             </div>
 
             <main>
                 <div class="ad">
-                    <article>광고1</article>
-                    <article>광고2</article>
+                    <article>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/3NmhG2REZPo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </article>
+                    <article>
+                        <img src="{% static 'ad.JPG' %}">
+                    </article>
                 </div>
 
+                <p id="vid">맞춤 동영상</p>
+
                 <div class="videos">
-                    <article>영상1</article>
-                    <article>영상2</article>
-                    <article>영상3</article>
+                    <div class="vid-box">
+                        <iframe width="295" height="165" src="https://www.youtube.com/embed/lIzvbifCO14" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="vid-info">
+                            <div><img src="{% static 'icon.JPG' %}" style="height:45; padding:5px;"></div>
+                            <div class="vid-text">
+                                <p id="vid-title">🤵EP.3-2 엄하신 큰아버지 아들 결혼식날 고추축제가 잡혔다(2대 ...</p>
+                                <p id="vid-sub">채널 십오야</p>
+                                <p id="vid-sub">조회수 218만회 · 2주 전</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vid-box">
+                        <iframe width="295" height="165" src="https://www.youtube.com/embed/aeT9oy2dLr0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="vid-info">
+                            <div><img src="{% static 'icon.JPG' %}" style="height:45; padding:5px;"></div>
+                            <div class="vid-text">
+                                <p id="vid-title">건우와 달고나커피&제티 만들었어요💕 | 윰드메이드(Yum de Made)</p>
+                                <p id="vid-sub">윰댕(yum-cast)</p>
+                                <p id="vid-sub">구독자 81.9만명 · 1주 전</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vid-box">
+                        <iframe width="295" height="165" src="https://www.youtube.com/embed/2u8mIHLrNEg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="vid-info">
+                            <div><img src="{% static 'icon.JPG' %}" style="height:45; padding:5px;"></div>
+                            <div class="vid-text">
+                                <p id="vid-title">🤵EP.3-2 엄하신 큰아버지 아들 결혼식날 고추축제가 잡혔다(2대 ...</p>
+                                <p id="vid-sub">채널 십오야</p>
+                                <p id="vid-sub">조회수 218만회 · 2주 전</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vid-box">
+                        <iframe width="295" height="165" src="https://www.youtube.com/embed/I31YJMo8pyc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="vid-info">
+                            <div><img src="{% static 'icon.JPG' %}" style="height:45; padding:5px;"></div>
+                            <div class="vid-text">
+                                <p id="vid-title">🤵EP.3-2 엄하신 큰아버지 아들 결혼식날 고추축제가 잡혔다(2대 ...</p>
+                                <p id="vid-sub">채널 십오야</p>
+                                <p id="vid-sub">조회수 218만회 · 2주 전</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <br><br><br>
+
+                <div class="videos">
+                    <div class="vid-box">
+                        <iframe width="295" height="165" src="https://www.youtube.com/embed/lIzvbifCO14" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="vid-info">
+                            <div><img src="{% static 'icon.JPG' %}" style="height:45; padding:5px;"></div>
+                            <div class="vid-text">
+                                <p id="vid-title">🤵EP.3-2 엄하신 큰아버지 아들 결혼식날 고추축제가 잡혔다(2대 ...</p>
+                                <p id="vid-sub">채널 십오야</p>
+                                <p id="vid-sub">조회수 218만회 · 2주 전</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vid-box">
+                        <iframe width="295" height="165" src="https://www.youtube.com/embed/aeT9oy2dLr0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="vid-info">
+                            <div><img src="{% static 'icon.JPG' %}" style="height:45; padding:5px;"></div>
+                            <div class="vid-text">
+                                <p id="vid-title">건우와 달고나커피&제티 만들었어요💕 | 윰드메이드(Yum de Made)</p>
+                                <p id="vid-sub">윰댕(yum-cast)</p>
+                                <p id="vid-sub">구독자 81.9만명 · 1주 전</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vid-box">
+                        <iframe width="295" height="165" src="https://www.youtube.com/embed/2u8mIHLrNEg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="vid-info">
+                            <div><img src="{% static 'icon.JPG' %}" style="height:45; padding:5px;"></div>
+                            <div class="vid-text">
+                                <p id="vid-title">🤵EP.3-2 엄하신 큰아버지 아들 결혼식날 고추축제가 잡혔다(2대 ...</p>
+                                <p id="vid-sub">채널 십오야</p>
+                                <p id="vid-sub">조회수 218만회 · 2주 전</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vid-box">
+                        <iframe width="295" height="165" src="https://www.youtube.com/embed/I31YJMo8pyc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="vid-info">
+                            <div><img src="{% static 'icon.JPG' %}" style="height:45; padding:5px;"></div>
+                            <div class="vid-text">
+                                <p id="vid-title">🤵EP.3-2 엄하신 큰아버지 아들 결혼식날 고추축제가 잡혔다(2대 ...</p>
+                                <p id="vid-sub">채널 십오야</p>
+                                <p id="vid-sub">조회수 218만회 · 2주 전</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </main>
         </section>
 
