@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>youtube</title>
+        <meta charset='utf-8'>
+        <link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/youtubestyle.css' %}">
+    </head>
+
+    <body>
+        <header>
+            <div class="icon">
+                <img src="{% static 'burger.JPG' %}">
+                <img src="{% static 'youtubeICON.JPG' %}">
+            </div>
+
+            <div class="search">
+                <input type="text" placeholder="검색"><!--내용입력 태그-->
+                <button><img src="{% static 'search.JPG' %}"></button><!--버튼 태그-->
+
+            </div>
+            
+            <div class="profile">프로필</div>
+        </header>
+
+        <section>
+            <div class="menu">
+                <h3>Home</h3>
+                <h3>Trending</h3>
+                <h3>Subsriptions</h3>
+                <hr> <!--수평선 그리는 태그-->
+                <h3>Library</h3>
+                <h3>History</h3>
+                <h3>Watch later</h3>
+                <h3>Liked videos</h3>
+                <hr> <!--수평선 그리는 태그-->
+                <h3 id="menu-title">SUBSCRIPTIONS</h3>
+                <h3>마정이</h3>
+                <hr> <!--수평선 그리는 태그-->
+                <h3 id="menu-title">MORE FROM YOUTUBE</h3>
+                <h3>YouTube Premium</h3>
+                <h3>YouTube Movies</h3>
+            </div>
+
+            <main>
+                <div class="ad">
+                    <article>광고1</article>
+                    <article>광고2</article>
+                </div>
+
+                <div class="videos">
+                    <article>영상1</article>
+                    <article>영상2</article>
+                    <article>영상3</article>
+                </div>
+            </main>
+        </section>
+
+    </body>
+</html>

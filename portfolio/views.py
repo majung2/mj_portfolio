@@ -13,3 +13,7 @@ def secondpg(request):
 
 def new(request):
     return render(request, 'portfolio/new.html')
+
+def youtube(request):
+    return render(request, 'portfolio/youtube.html')
+    

@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height:70px;
+}
+
+.icon{
+    align-items: center;
+}
+
+.search{
+    height:40px;
+    width:50%;
+    border: 1px solid #5e5e61;
+}
+
+input{
+    font-size:20px;
+    width: 40%;
+    padding:10px;
+    border:0px;
+    outline:none;
+    float:left;
+}
+
+button{
+    width:50px;
+    height:100%;
+    border:0px;
+    outline:none;
+    float:right;
+}
+
+.profile{
+    background-color: wheat;
+}
+
+section{
+    display: flex;
+    align-items: stretch;
+}
+
+.menu{
+    background-color: #f5f5f5;
+    min-width:300px;
+}
+
+h3{
+    padding: 0 20px;
+}
+
+#menu-title{
+    color:#5e5e61;
+    padding: 0 10px;
+}
+
+hr{
+    background-color:#dedede;
+    border-bottom:0px;
+
+}
+
+main{
+    width:80%;
+}
+
+.ad{
+    display: flex;
+    background-color: teal;
+}
+
+.videos{
+    display: flex;
+    background-color: palevioletred;
+}
+
