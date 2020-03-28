@@ -51,4 +51,34 @@ footer{
     font-size:5px;
 }
 
+a:link{
+    text-decoration: none;
+    color:black;
+}
+a:visited{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    text-decoration: none;
+    background-color: green;
+}
+
+h1:hover{
+    background-color: hotpink;
+}
+ul{
+    margin:0;
+    padding:0;
+}
+li{
+    list-style:none;
+    padding-left: 0;
+
+}
+
+li:hover{
+    background-color: indianred;
+}
+
 
